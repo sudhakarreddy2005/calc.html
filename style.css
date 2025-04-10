@@ -1,0 +1,25 @@
+@keyframes glow {
+    from {
+       transform: matrix(0.9,0,0,0.9,0,0);
+    }
+    30%{
+        transform:matrix(1.1,0,0,1.1,23,23);
+        box-shadow: 0px 0px 10px rgb(232, 237, 233),
+        0px 0px 10px rgb(232, 237, 233)
+        ;
+    }
+}
+ button{
+    animation: 4s ease-in-out 0s infinite running glow ;
+    color:black;
+    font-size: 1.2rem;
+    margin: 10px;
+    border: inherit;
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    border-radius: 50%;
+}
+i{
+    animation: 4s ease-in-out 0s infinite running glow ;
+}

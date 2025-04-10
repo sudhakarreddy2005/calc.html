@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title> fns_calculatoar</title>
+    <style>
+       
+  body{
+    background-color: black;
+  }
+    
+    h3,p{
+        color:aliceblue;
+        text-align:center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2rem;
+        
+    }
+    form{
+        text-align: center;
+        
+    }
+    fieldset{
+        margin: 5pxx;
+    }
+
+    </style>
+</head>
+
+<!-- https://github.com/SuperSimpleDev/javascript-course/commit/d90699e3909540adacca4a1cd37e196e87608f2d -->
+<body >
+    
+    <h3>calculator </h3>
+    <p id="output"><i class="fa-solid fa-robot fa-flip-horizontal fa-xl"></i></p>
+   <form  >
+        <fieldset style="border: none; ">
+            
+        
+<!--             
+             type must be button to avoid refreshig of site as 
+             btton  tag is enclosed in form then it acts as submit type defaultu -->
+          
+             <button type="button" onclick=" updateCalculator(1);" > 1 </button>
+             <button type="button" onclick=" updateCalculator(2);" > 2 </button>
+             <button type="button" onclick=" updateCalculator(3);" > 3 </button>
+             <button type="button" onclick=" updateCalculator('+');" > +</button>
+            
+        </fieldset>
+
+        <fieldset style="border: none;" >
+             <button type="button" onclick=" updateCalculator(4);" > 4 </button>
+             <button type="button" onclick=" updateCalculator(5);" > 5 </button>
+             <button type="button" onclick=" updateCalculator(6);" > 6 </button>
+             <button type="button" onclick=" updateCalculator('-');" > -</button>
+                  
+         </fieldset>
+
+         <fieldset style="border: none;">
+            <button type="button" onclick=" updateCalculator(7);" > 7 </button>
+            <button type="button" onclick=" updateCalculator(8);" > 8 </button>
+            <button type="button" onclick=" updateCalculator(9);" > 9 </button>
+            <button type="button" onclick=" updateCalculator('*');" > *</button>
+        
+         </fieldset>
+
+         <fieldset style="border: none;">
+            <button type="button" onclick="
+            calc+= '0';
+            console.log(calc) ; document.getElementById('output').innerHTML=calc" ;> 0
+        
+            </button>
+            <button type="button" onclick=" updateCalculator('/');" > /</button>
+            <button type="button" onclick=" updateCalculator('.');" > .</button>
+            <button type="button" onclick="
+                        calc = eval(calc);  //eval method is used for evalution of the string
+                console.log(calc);
+                document.getElementById('output').innerHTML=calc;
+                " 
+                >
+                =
+            </button>  
+         </fieldset>
+
+         <fieldset style="border: none;">
+
+            <button type="button" onclick=" updateCalculator('');" > clear</button>
+         </fieldset>
+    
+    </form>
+
+    <script >
+        let calc = ''; //empty string
+        function updateCalculator(val){
+            calc+= val;
+            if(val == ''){
+                calc = ''
+                console.log('cleared')
+                document.getElementById('output').innerHTML=' cleared';
+            }
+            console.log(calc);
+            document.getElementById('output').innerHTML=calc;
+                     
+
+        } 
+    </script>
+</body>
+</html>
