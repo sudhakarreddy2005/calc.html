@@ -52,10 +52,9 @@ calculator
 
 
 
-## Live Demo
-*(If hosted on GitHub Pages, add your link here)*  
+## Live Demo 
 Example:  
-[View on GitHub Pages](https://sudhakarreddy2005.github.io/fns_calculator/)
+https://sudhakarreddy2005.github.io/calc.html/
 
 ---
 
