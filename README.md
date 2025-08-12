@@ -28,7 +28,7 @@ calculator/
 ### Installation & Usage
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/fns_calculator.git
+   git clone https://github.com/sudhakareddy2005/fns_calculator.git
    ```
 2. **Open the Project**
    Navigate to the cloned project folder.
