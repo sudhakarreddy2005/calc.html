@@ -18,11 +18,12 @@ The **Fancy Glow Calculator** is a lightweight, browser-based calculator develop
 
 ### Project Structure
 
-calculator/
-│
+calculator
+
+
 ├── index.html   # Primary HTML file
 ├── style.css    # Styling and animation definitions
-└── README.md    # Project documentation
+├── README.md    # Project documentation
 
 
 ### Installation & Usage
